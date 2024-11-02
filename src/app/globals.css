@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.classbody{
+  background-color: grey;
+  background-image: url(../public/bodyBackground.jpg);
+}
+.headercontainer {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #b9adad;
+  height: 70px;
+  margin: auto;
+  width: 100%;
+  align-items: center; 
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  border-bottom: 2px solid #000000;
+
+}
+
+
+ul {
+  display: flex;
+  list-style: none;
+  /* align-items: center; */
+  gap: 50px;
+  /* justify-content: center; */
+  margin-right: 10px;
+  /* border: 2px solid red; */
+}
+
+ul li {
+  color: #000000;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: #000000;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1 {
+  font-size: 20px;
+  margin-left: 0px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.innerContainer {
+     display: flex;
+     flex-direction: column;
+     border: 2px solid black;
+     width: 270px;
+     height: 360px;
+     margin: auto;
+     position: relative;
+     padding: 8px;
+     /* top: 4px; */
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 10px;
+     /* background-color: #2e557a; */
+     transition: 0.4s;
+     background-image: url(../public/cartbackground\ pic.avif);
+     
+}
+
+.innerContainer:hover {
+  transform: scale(1.1);
+}
+
+.blodimage {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.blodbtn{
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+p {
+  font-size: 14px;
+  margin-left: 0px;
+  /* font-weight: bold; */
+  color: #ffffff;
+}
+
+.childContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+  /* border: 2px solid red; */
+  position: relative;
+  top: 50px;
+  height: 800px;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .headercontainer {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  ul li {
+    background-color: #4161ff;
+    width: 350px;
+    padding: 10px;
+    animation: 2s;
+    margin: auto;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  ul li:hover {
+    transform: scale(1.01);
+  }
+
+  .innerContainer {
+    width: 90%; 
+    height: auto; 
+  }
+
+  .childContainer {
+    width: 100%; 
+    height: auto; 
+    flex-direction: column; 
+  }
+
+  .blodimage {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .blodbtn {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  h1 {
+    font-size: 18px; 
+  }
+
+  p {
+    font-size: 12px; 
+  }
+  .logo {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .responsive {
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headercontainer {
+    padding: 5px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  ul li {
+    background-color: #4161ff;
+    width: 350px;
+    padding: auto;
+    animation: 2s;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  ul li:hover {
+    transform: scale(1.01);
+  }
+
+  .footer {
+    font-size: 12px; 
+  }
+}

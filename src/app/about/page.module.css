@@ -1,0 +1,16 @@
+
+
+.classbody{
+    background-color: grey;
+    /* background-image: url(../../public/bodyBackground.jpg); */
+  
+  }
+
+  /* .containerBackgound {
+    background-image: url(../../public/bodyBackground.jpg)
+  } */
+
+  .h1element {
+    color: #ffffff;
+    position: relative;
+  }
